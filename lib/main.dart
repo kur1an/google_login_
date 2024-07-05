@@ -40,7 +40,7 @@ class _SignInDemoState extends State<SignInDemo> {
       if (result != null) {
         print('User signed in: ${result.displayName}');
         final response = await http.post(
-          Uri.parse('http://103.177.252.84:5555/path'),
+          Uri.parse('http://192.168.1.34:5555'),
           headers: <String, String>{
             'Content-Type': 'application/json; charset=UTF-8',
           },
